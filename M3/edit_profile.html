@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Modulo 3</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="../lib/MDB-Free/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../lib/MDB-Free/css/mdb.min.css" rel="stylesheet">
+        <link href="../lib/fontawesome-free-5.2.0-web/css/all.min.css" rel="stylesheet">
+        <link href="../bto/css/style.css" rel="stylesheet">
+        <style>
+
+
+        </style>
+    </head>
+
+    <body class="noscroll">
+
+        <!-- DIV QUE OPACA LA PANTALLA-->
+        <div id="div-oculto"></div>
+        <!-- /DIV QUE OPACA LA PANTALLA-->
+
+        <div id="digi-menu-log">
+            <!-- MENU DESPLEGABLE -->
+            <div class="digi-modal digi-menu ocultar-pop">
+                <div class="action-close-pop icon-white">
+                    <i class="fas fa-times"></i>  
+                </div>
+
+                <div class="digi-cont-top digi-menu-header dig-deg-orange">
+                    <div>
+                        <img class="img-fluid" src="../bto/digisalud-logo.png" alt="Digisalud">  
+                    </div>
+                </div>
+                <div class="digi-menu-body">
+                    <!--ITEM 1-->
+                    <div class="digi-menu-item">
+                        <div class="digi-menu-item-label">
+                            Acerca de
+                            <img class="pull-right" src="../bto/images/icon/Icon_arrow_normal.png" alt="icon" />
+                        </div>
+                        <div class="digi-menu-sub digi-menu-hide">
+                            <div class="digi-menu-sub-item">
+                                <div class="digi-menu-sub-item-label">
+                                    Digisalud
+                                </div>
+                            </div>
+                            <div class="digi-menu-sub-item active">
+                                <div class="digi-menu-sub-item-label">
+                                    Preguntas Frecuentes
+                                </div>
+                            </div>
+                            <div class="digi-menu-sub-item">
+                                <div class="digi-menu-sub-item-label">
+                                    Términos de Uso y  Políticas de <br> Privacidad
+                                </div>
+                            </div>
+                            <div class="digi-menu-sub-item">
+                                <div class="digi-menu-sub-item-label">
+                                    Contacto
+                                </div>
+                            </div>
+                            <div class="digi-menu-sub-item">
+                                <div class="digi-menu-sub-item-label">
+                                    Comparte
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--ITEM 2-->
+                    <div class="digi-menu-item">
+                        <div class="digi-menu-item-label">
+                            Otro item del menu
+                            <img class="pull-right" src="../bto/images/icon/Icon_arrow_normal.png" alt="icon" />
+                        </div>
+                        <div class="digi-menu-sub digi-menu-hide">
+                            <div class="digi-menu-sub-item">
+                                <div class="digi-menu-sub-item-label">
+                                    Sub menú 1
+                                </div>
+                            </div>
+                            <div class="digi-menu-sub-item">
+                                <div class="digi-menu-sub-item-label">
+                                    Sub menú 2
+                                </div>
+                            </div>
+                            <div class="digi-menu-sub-item">
+                                <div class="digi-menu-sub-item-label">
+                                    Sub menú 3
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /MENU DESPLEGABLE -->
+
+            <!-- MENU DESPLEGABLE PROFILE -->
+            <div class="digi-modal digi-menu-prof ocultar-pop">
+                <div class="digi-cont-top digi-menu-header dig-deg-orange">
+                    <div class="section-pr-name">
+                        <h2>Alberto De Jesus</h2>
+                        <p>Psicólogo</p>
+                    </div>
+                    <div class="section-profile closet">
+                        <img class="arrow-profile action-close-pop-prof" src="../bto/images/icon/arrow_top.png" alt="Profile"/>
+                        <img class="photo-profile" src="../bto/images/icon/register.png" alt="Profile"/>
+                    </div>
+                </div>
+
+                <div class="digi-menu-body-prof">
+                    <div class="digi-menu-sub-prof">
+                        <div class="digi-menu-sub-item-prof">
+                            <div class="digi-menu-sub-item-label-prof">
+                                <a href="edit_profile.html">Editar perfil</a>
+                            </div>
+                        </div>
+                        <div class="digi-menu-sub-item-prof">
+                            <div class="digi-menu-sub-item-label-prof">
+                                <a href="#">Mis jornadas</a>
+                            </div>
+                        </div>
+                        <div class="digi-menu-sub-item-prof">
+                            <div class="digi-menu-sub-item-label-prof">
+                                <a href="#">Configuración</a>
+                            </div>
+                        </div>
+                        <div class="digi-menu-sub-item-prof">
+                            <div class="digi-menu-sub-item-label-prof">
+                                <a href="#">Ayuda</a>
+                            </div>
+                        </div>
+                        <div class="digi-menu-sub-item-prof">
+                            <div class="digi-menu-sub-item-label-prof">
+                                <a href="#">Cerrar sesión</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /MENU DESPLEGABLE PROFILE -->
+
+            <!-- notificacion pop up-->
+            <div class="digi-modal digi-popup body-section-notification ocultar-pop">
+                <div class="container-fluid">
+                    <div class="row ">
+
+                        <div class="action-close-pop">
+                            <i class="fas fa-times"></i>  
+                        </div>
+
+                        <div class="col-md-12 text-center font-weight-bold pb-3">
+                            <h5>Notificaciónes <span>9</span></h5>
+                        </div>
+
+                        <div class="col-md-12 notifications-popup">
+                            <div class="notification-popup">
+                                <p><b>Elise Beaucome </b> - Nuevo registro</p>
+                            </div>
+                            <div class="notification-popup">
+                                <p><b>Nueva Jornada </b> - Asignar roles</p>
+                            </div>
+                            <div class="notification-popup">
+                                <p><b>Nueva Jornada </b> - Colegio Maria Carlota</p>
+                            </div>
+                            <div class="notification-popup">
+                                <p><b>Jornada </b> - 10.12.2018 - Petare</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 pt-5 pb-2 text-center">
+                            <button class="btn btn-dig-blue">Ver todas</button>  
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- /notificacion pop up-->
+
+            <!-- MENU items -->
+            <header class="header-digisalud dig-deg-orange">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="section-menu">
+                                <img class="bto-icons-tam" src="../bto/images/icon/Icon_menu.png" alt="Digisalud"/>
+                            </div>
+                            <div class="section-back">
+                                <img class="bto-icons-tam" src="../bto/images/icon/Icon_Back.png" alt="Digisalud"/>
+                            </div>
+                            <div class="section-search d-none d-sm-block">
+                                <div class="inner-addon left-addon">
+                                    <div><i class="fas fa-search"></i></div>
+                                    <input type="search" class="col-md-12" placeholder="Búsqueda"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="logo-prof">
+                            <div class="section-logo-log text-center">
+                                <img src="../bto/Isotipo_digisalud.png" alt="Digisalud">
+                            </div>
+                        </div>
+
+                        <div class="col-6 text-right">
+                            <div class="section-profile open">
+                                <img class="arrow-profile " src="../bto/images/icon/arrow_bottom.png" alt="Profile"/>
+                                <img class="photo-profile" src="../bto/images/icon/register.png" alt="Profile"/>
+                            </div>
+                            <div class="section-pr-name d-none d-sm-block">
+                                <h2>Alberto De Jesus</h2>
+                                <p>Psicólogo</p>
+                            </div>
+                            <div class="section-notification">
+                                <span>9</span>
+                                <img class="arrow-profile" src="../bto/images/icon/notification.png" alt="Profile"/>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+            <!-- /MENU items -->
+
+        </div>
+
+        <!-- Contenido -->
+        <div id="sectionHomeM3" class="clearfix container-fluid">
+
+            <!--CONTENIDO-->
+            <div id="sectionHomeRow" class="row dig-backg-texture align-items-center">
+
+                <!--SECCION IZQUIERDA-->
+                <div id="dig-section-left" class="col-md-6">
+                    <div class="container">
+                        <div class="row justify-content-md-center">
+                            <div class="col-12 aa">
+                                <h1>Edita tu perfil</h1>
+                                <p>
+                                    Selecciona cada campo y ed&iacute;talos.
+                                    Recuerda salvar los cambios en tu perfil
+                                    al culminar.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/SECCION IZQUIERDA-->
+
+                <!--SECCION DERECHA FORMULARIO-->
+                <div id="dig-section-right" class="col-md-6 dig-backg-white">
+                    <div class="container">
+                        <div class="row justify-content-md-center align-items-center">
+                            <div class="col-md-12 form-row  pt-5">
+                                <div class="col-md-6">
+                                    <h2 class="font-weight-bold pt-4">Editar perfil de usuario</h2>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="hidden" id="update_photo" value="0">
+                                    <div id="div-edit-img-profile" class="pull-right" >
+                                        <img id="edit-img-profile" src="../bto/images/icon/register.png" class="img-responsive" alt="Profile Pictory">
+                                        <div id="div-btn-file">
+                                            <span class=" btn-file">
+                                                <i class="fa fa-pencil-alt text-white"></i> 
+                                                <input name="file-input" id="file-input" type="file" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="md-form mt-0">
+                                        <label for="r_name">Nombre (s)</label>
+                                        <input type="text" id="r_name" class="form-control form-control-sm" autocomplete="off">
+                                        <div class="div-validador">
+                                            <div class="bto-validator">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="md-form mt-0">
+                                        <label for="r_lastname">Apellido (s)</label>
+                                        <input type="text" id="r_lastname" class="form-control form-control-sm" autocomplete="off">
+                                        <div class="div-validador">
+                                            <div class="bto-validator">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="select">
+                                        <select id="r_gender" class="select-text" required>
+                                            <option disabled selected></option>
+                                            <option value="1">Option 1</option>
+                                            <option value="2">Option 2</option>
+                                            <option value="3">Option 3</option>
+                                        </select>
+                                        <span class="select-highlight"></span>
+                                        <span class="select-bar"></span>
+                                        <label for="r_gender" class="select-label">G&eacute;nero</label>
+                                    </div>
+                                    <div class="div-validador">
+                                        <div class="bto-validator">&nbsp;</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="md-form mt-0">
+                                        <label for="r_phone">Nº de tel&eacute;fono</label>
+                                        <input type="text" id="r_phone" class="form-control form-control-sm " autocomplete="off">
+                                        <div class="div-validador">
+                                            <div class="bto-validator">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="select">
+                                        <select id="r_day" class="select-text" required>
+                                            <option disabled selected></option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                        </select>
+                                        <span class="select-highlight"></span>
+                                        <span class="select-bar"></span>
+                                        <label for="r_day" class="select-label">D&iacute;a</label>
+                                    </div>
+                                    <div class="div-validador">
+                                        <div class="bto-validator">&nbsp;</div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="select">
+                                        <select id="r_month" class="select-text" required>
+                                            <option disabled selected></option>
+                                            <option value="1">Enero</option>
+                                            <option value="2">Febrero</option>
+                                            <option value="3">Marzo</option>
+                                            <option value="4">Abril</option>
+                                            <option value="5">Mayo</option>
+                                            <option value="6">Junio</option>
+                                            <option value="7">Julio</option>
+                                            <option value="8">Agosto</option>
+                                            <option value="9">Septiembre</option>
+                                            <option value="10">Octubre</option>
+                                            <option value="11">Noviembre</option>
+                                            <option value="12">Diciembre</option>
+                                        </select>
+                                        <span class="select-highlight"></span>
+                                        <span class="select-bar"></span>
+                                        <label for="r_month" class="select-label">Mes</label>
+                                    </div>
+                                    <div class="div-validador">
+                                        <div class="bto-validator">&nbsp;</div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="select">
+                                        <select id="r_year" class="select-text" required>
+                                            <option disabled selected></option>
+                                            <option value="1980">1980</option>
+                                            <option value="1981">1981</option>
+                                            <option value="1982">1982</option>
+                                            <option value="1983">1983</option>
+                                            <option value="1984">1984</option>
+                                            <option value="1985">1985</option>
+                                            <option value="1986">1986</option>
+                                            <option value="1987">1987</option>
+                                            <option value="1988">1988</option>
+                                            <option value="1989">1989</option>
+                                            <option value="1990">1990</option>
+                                        </select>
+                                        <span class="select-highlight"></span>
+                                        <span class="select-bar"></span>
+                                        <label for="r_year" class="select-label">Año</label>
+                                    </div>
+                                    <div class="div-validador">
+                                        <div class="bto-validator">&nbsp;</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="select">
+                                        <select id="r_type_document" class="select-text" required>
+                                            <option disabled selected></option>
+                                            <option value="1">Option 1</option>
+                                            <option value="2">Option 2</option>
+                                            <option value="3">Option 3</option>
+                                        </select>
+                                        <span class="select-highlight"></span>
+                                        <span class="select-bar"></span>
+                                        <label for="r_type_document" class="select-label">Tipo de Documento</label>
+                                    </div>
+                                    <div class="div-validador">
+                                        <div class="bto-validator">&nbsp;</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="md-form mt-0">
+                                        <label for="r_document">N° de Documento</label>
+                                        <input type="text" id="r_document" class="form-control form-control-sm " autocomplete="off">
+                                        <div class="div-validador">
+                                            <div class="bto-validator">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="select">
+                                        <select id="r_country" class="select-text" required>
+                                            <option disabled selected></option>
+                                            <option value="1">Option 1</option>
+                                            <option value="2">Option 2</option>
+                                            <option value="3">Option 3</option>
+                                        </select>
+                                        <span class="select-highlight"></span>
+                                        <span class="select-bar"></span>
+                                        <label for="r_country" class="select-label">Pa&iacute;s</label>
+                                    </div>
+                                    <div class="div-validador">
+                                        <div class="bto-validator">&nbsp;</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="select">
+                                        <select id="r_city" class="select-text" required>
+                                            <option disabled selected></option>
+                                            <option value="1">Option 1</option>
+                                            <option value="2">Option 2</option>
+                                            <option value="3">Option 3</option>
+                                        </select>
+                                        <span class="select-highlight"></span>
+                                        <span class="select-bar"></span>
+                                        <label for="r_city" class="select-label">Ciudad</label>
+                                    </div>
+                                    <div class="div-validador">
+                                        <div class="bto-validator">&nbsp;</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="select">
+                                        <select id="r_profession" class="select-text" required>
+                                            <option disabled selected></option>
+                                            <option value="1">Option 1</option>
+                                            <option value="2">Option 2</option>
+                                            <option value="3">Option 3</option>
+                                        </select>
+                                        <span class="select-highlight"></span>
+                                        <span class="select-bar"></span>
+                                        <label for="r_profession" class="select-label">Profesi&oacute;n</label>
+                                    </div>
+                                    <div class="div-validador">
+                                        <div class="bto-validator">&nbsp;</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="md-form mt-0">
+                                        <label for="r_email">Correo Electr&oacute;nico</label>
+                                        <input type="email" id="r_email" class="form-control form-control-sm" autocomplete="off">
+                                        <div class="div-validador">
+                                            <div class="bto-validator">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="md-form text-left">
+                                        <div class="campo-pass">
+                                            <div class="view-pass">
+                                                <i class="fas fa-eye"></i>
+                                            </div>
+                                            <label for="r_password">Contraseña</label>
+                                            <input type="password" id="r_password" class="form-control form-control-sm" autocomplete="off">
+                                            <div class="div-validador">
+                                                <div class="bto-validator">&nbsp;</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="md-form text-left">
+                                        <div class="campo-pass">
+                                            <div class="view-pass">
+                                                <i class="fas fa-eye"></i>
+                                            </div>
+                                            <label for="rc_password">Confirmar Contraseña</label>
+                                            <input type="password" id="rc_password" class="form-control form-control-sm" autocomplete="off">
+                                            <div class="div-validador">
+                                                <div class="bto-validator">&nbsp;</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="validate" class="clearfix  pb-5">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="round">
+                                        <input type="checkbox" id="r_check_data_private" />
+                                        <label for="r_check_data_private"></label> 
+                                        <span>Mantener datos privados</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="round">
+                                        <input type="checkbox" id="r_check_terms" />
+                                        <label for="r_check_terms"></label> 
+                                        <span> <a href="#">Acepto t&eacute;rminos y condiciones</a></span>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 pt-5">
+                                    <div class="clearfix  pb-5">
+                                        <button id="r_btn_register" class="btn btn-dig-blue" >Guardar</button>  
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--SECCION DERECHA FORMULARIO-->
+
+        </div>
+        <!--/CONTENIDO-->
+
+        <script type="text/javascript" src="../lib/MDB-Free/js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="../lib/MDB-Free/js/popper.min.js"></script>
+        <script type="text/javascript" src="../lib/MDB-Free/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../lib/MDB-Free/js/mdb.min.js"></script>
+        <script type="text/javascript" src="../lib/fontawesome-free-5.2.0-web/js/all.min.js"></script>
+        <script type="text/javascript" src="../bto/js/bto_script.js"></script>
+        <script>
+            $(document).ready(function () {
+                digiModule3.main();
+            });
+        </script>
+    </body>
+</html>
